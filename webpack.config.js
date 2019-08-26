@@ -2,10 +2,16 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: {
+    bundle: "./src/index.js", 
+    script: "./src/script.js", 
+    slider: "./src/slider.js"
+  },
   output: {
-    path: path.join(__dirname, "/dist"),
-    filename: "index-bundle.js"
+    /*path: path.join(__dirname, "/dist"),
+    filename: "index-bundle.js"*/
+    filename: '[name].js',
+    path: __dirname + '/dist'
   },
   module: {
     rules: [
@@ -26,8 +32,17 @@ module.exports = {
             'css-loader', 
             'less-loader'
             ],
-        }
+        },
 
+        {
+          test: /\.(jpe?g|png|gif|mp3)$/i,
+          loaders: ['file-loader']
+      }, 
+
+      {
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'file-loader'
+      }
     ]
   },
   plugins: [
