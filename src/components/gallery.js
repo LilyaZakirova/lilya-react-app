@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import VideoApp from './video_app';
+
 
 const picture1 = require('../img/picture1.jpg');
 const picture2 = require('../img/picture2.jpg');
@@ -6,6 +8,7 @@ const picture3 = require('../img/picture3.jpg');
 const picturePlants = require('../img/local-plants.jpg');
 const pictureRoad = require('../img/road.jpg');
 const pictureBridge = require('../img/devil-bridge.jpg');
+
 
 class Gallery extends Component {
     render() {
@@ -166,6 +169,10 @@ class Gallery extends Component {
                                     <source src="video.ogv" type="video/ogg"/>
                                     <source src="video.webm" type="video/webm"/>
                                 </video>
+                            </div>
+
+                            <div className="video-app">
+                                <VideoApp />
                             </div>
                         </section>
                     </article>
