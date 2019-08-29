@@ -2,8 +2,9 @@
 import React, { Component } from "react";
 
 import '../styles/main.less';
-import '../styles/normalize.css';
-import '../styles/reset-button.css';
+import '../styles/css/normalize.css';
+import '../styles/css/reset-button.css';
+import '../styles/css/ptsans.css';
 
 
 import Main from './main.js';

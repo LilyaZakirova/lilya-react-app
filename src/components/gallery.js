@@ -160,17 +160,7 @@ class Gallery extends Component {
                         
                         <section className="gallery__presentation-block">
                             <h2 className="gallery__title">Все еще сомневаетесь?</h2>
-                            <p className="gallery__description">Смотрите видеопрезентацию и скорее за билетами, пока<br/> они не подорожали в очередной раз!</p>
-                            <div className="gallery__video-wrapper">
-                                <video className="gallery__video"
-                                    controls
-                                    preload="metadata">
-                                    <source src="video.mp4" type="video/mp4"/>
-                                    <source src="video.ogv" type="video/ogg"/>
-                                    <source src="video.webm" type="video/webm"/>
-                                </video>
-                            </div>
-
+                            <p className="gallery__description">Смотрите видеопрезентации и скорее за билетами, пока<br/> они не подорожали в очередной раз!</p>
                             <div className="video-app">
                                 <VideoApp />
                             </div>
