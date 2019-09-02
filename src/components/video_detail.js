@@ -5,7 +5,7 @@ const VideoDetail = ({video}) => {
     if (!video) {
         return (
             <div className="video-app__notification">
-                Loading...
+                Видео загружается...
             </div>
         );
     }

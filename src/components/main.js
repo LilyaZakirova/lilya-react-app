@@ -90,7 +90,7 @@ class Main extends Component {
 							<input type="button" className="hotel-search__button" value="Найти гостиницу" name="search"/>
 						</div>
 						<div className="hotel-reservation__map">
-							{/*}iframe className="hotel-reservation__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1636.8728249890823!2d-111.78967905522788!3d34.86261784022202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1560960050134!5m2!1sru!2sru" width="1200" height="350" frameBorder="0" style="border:0" allowFullScreen></iframe>*/}
+							<iframe className="hotel-reservation__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1636.8728249890823!2d-111.78967905522788!3d34.86261784022202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1560960050134!5m2!1sru!2sru" width="1200" height="350" frameBorder="0" allowFullScreen></iframe>
 						</div>	
 					</section>
 				</article>

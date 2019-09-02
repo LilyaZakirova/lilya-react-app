@@ -5,7 +5,7 @@ var logoMobile = document.querySelector('.menu-section__logo-mobile');
 
 var isMenuClosed = true;
 
-/*toggle menu*/ 
+//toggle menu
 menuButton.addEventListener('click', function() {
 	
 	if (isMenuClosed) {
@@ -27,7 +27,7 @@ menuButton.addEventListener('click', function() {
 
 
 
-/*correct work if resolution changes*/ 
+//correct work if resolution changes
 function screenCheck(reso) {
 	logoMobile.style.visibility = "visible";
 	if (reso.matches) {
@@ -49,7 +49,7 @@ screenCheck(phoneReso);
 
 
 
-/*adding svg shape in IE*/ 
+//adding svg shape in IE
 var sAgent = window.navigator.userAgent;
 var Idx = sAgent.indexOf("MSIE");
 

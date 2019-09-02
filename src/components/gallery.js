@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import VideoApp from './video_app';
-
+import Slider from './images_slider.js';
 
 const picture1 = require('../img/picture1.jpg');
 const picture2 = require('../img/picture2.jpg');
@@ -20,7 +20,7 @@ class Gallery extends Component {
                             <h2 className="gallery__title">Фото и видео</h2>
                             <p className="gallery__description">Не можете решиться на путешествие из-за курса?<br/>Фотографии помогут вам забыть о политике и экономике.</p>
                             <div className="photos-container">
-                                <div className="slider">
+                                {/*<div className="slider">
                                     <div className="slider__items">
                                         <div className="slider__item">
                                             <figure className="photo slider__photo"> 
@@ -97,11 +97,13 @@ class Gallery extends Component {
                                             <use xlinkHref="#icon-arrow-right"></use>
                                         </svg>
                                     </a>
-                                </div>
+                                </div>*/}
+                                    <Slider />
                             
                                 <figure className="photo photo--small"> 
                                     <div style={{backgroundImage: "url("+picturePlants+")"}} 
                                     className="photo__picture photo__picture--small-one"></div>
+
                                     <figcaption className="photo__legend">
                                         <div className="photo__info">
                                             <h3 className="photo__title">Местная растительность</h3>
