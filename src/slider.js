@@ -24,13 +24,6 @@ function showSlide(n) {
         slideIndex = n;
     }
     
-    /*
-    this is needed code
-    slides.forEach(function(item) {
-        item.style.display = "none"; 
-    });
-
-    slides[slideIndex].style.display = "block"; */
 
     slides.forEach(function(item, i) {
         if (i != n) {

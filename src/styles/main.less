@@ -15,6 +15,8 @@
 @import '_photo block.less';
 @import '_slider block.less';
 @import '_video-app block.less';
+@import '_normalize.less';
+
 
 
 
@@ -139,7 +141,6 @@
         font-weight: bold;
         .text-block-parameters(18px; 26px; bold; @base-text-color; 0 auto);
         outline: none;
-        /*padding-top: 10px;*/
         padding-left: 15px;
         box-sizing: border-box;
         margin-right: 0;
@@ -185,7 +186,6 @@
         padding: 0;
         width: 100%;
         margin-bottom: 80px;
-        /*border-top: 1px solid #e6e6e6;*/
 
         &--narrow {
             width: 50%;
@@ -594,25 +594,6 @@
     @media @phone {
         order: 5;
     }
-    /*position: relative;
-
-    &:before {
-        position: absolute;
-        content: "";
-        background-color: red;
-        width: 100%;
-        height: 4px;
-        left: 0;
-        top: 10px;
-    }
-
-    .feedback__subtitle {
-        position: absolute;
-        left: 40px;
-        top: 29px;
-        background: red;
-        padding: 0 10px
-    }*/
 }
 
 .send {
@@ -625,11 +606,6 @@
         }
     }
 }
-
-
-/*br {
-    display: flex !important;
-}*/
 
 .menu-button {
     right: 6.25% !important;

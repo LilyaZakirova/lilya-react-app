@@ -1,10 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Main extends Component {
-    render() {
-      return (
-        <div>
-          <main className="page-main">
+function Main() {
+	return (
+		<div>
+			<main className="page-main">
 				<article>
 					<section className="reasons">
 						<header className="reasons-header">
@@ -95,10 +94,8 @@ class Main extends Component {
 					</section>
 				</article>
 			</main>
-        </div>
-      );
-    }
-  }
-
+		</div>
+	);
+}
 
  export default Main;

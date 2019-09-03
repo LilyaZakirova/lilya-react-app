@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Form extends Component {
-    render() {
-      return (
+function Form() {
+    return (
         <div>  
           <main>
                 <div className="feedback">
@@ -115,9 +114,7 @@ class Form extends Component {
                   </div>                                                                                 
             </main>
          </div>   
-      );
-    }
-  }
-
+    );
+}
 
   export default Form;

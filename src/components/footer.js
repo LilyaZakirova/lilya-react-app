@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Footer extends Component {
-    render() {
-      return (
+function Footer ()  {
+    return (
         <div>
           <footer className="page-footer">
                 <div className="hashtag page-footer__hashtag">
@@ -43,9 +42,8 @@ class Footer extends Component {
                 </div>
             </footer>
         </div>
-      );
-    }
-  }
+    );
+}
 
 
  export default Footer;

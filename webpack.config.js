@@ -28,15 +28,15 @@ module.exports = {
       { 
         test: /\.less$/,
         use: [ 
-            'style-loader',
-            'css-loader', 
-            'less-loader'
-            ],
-        },
+          'style-loader',
+          'css-loader', 
+          'less-loader'
+        ],
+      },
 
-        {
-          test: /\.(jpe?g|png|gif|mp3)$/i,
-          loaders: ['file-loader']
+      {
+        test: /\.(jpe?g|png|gif|mp3)$/i,
+        loaders: ['file-loader']
       }, 
 
       {
