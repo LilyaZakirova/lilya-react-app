@@ -39,8 +39,15 @@
         }
 
         @media @phone {
-            z-index: 4;
+            z-index: 2;
             position: fixed;
+
+        }
+
+        &--invisible {
+            @media @phone{
+                visibility: hidden;
+            }
         }
     }
 

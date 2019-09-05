@@ -5,7 +5,6 @@ module.exports = {
   entry: {
     bundle: "./src/index.js", 
     script: "./src/script.js"
-    /*slider: "./src/slider.js"*/
   },
   output: {
     /*path: path.join(__dirname, "/dist"),
