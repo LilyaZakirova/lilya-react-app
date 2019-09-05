@@ -75,14 +75,14 @@ const NavigationList = (props) => {
                 <NavLink to="/" className="nav-menu__link">Главная</NavLink>
             </li>
             <li className="nav-menu__item nav-menu__item--with-margin">
-                <NavLink to="/gallery" className="nav-menu__link">Фото и видео</NavLink>					
+                <NavLink to="/gallery" className="nav-menu__link">Фото и видео</NavLink>
             </li>
             <li className="nav-menu__item">
-                <NavLink to="/form" className="nav-menu__link">Форма отзыва</NavLink>				
+                <NavLink to="/form" className="nav-menu__link">Форма отзыва</NavLink>
             </li>
             <li className="nav-menu__item">
-                <a href="https://dataart.com/" target="_blank" className="nav-menu__link">DataArt</a>						
-            </li>					
+                <a href="https://dataart.com/" target="_blank" className="nav-menu__link">DataArt</a>
+            </li>
         </ul>
     );
 }

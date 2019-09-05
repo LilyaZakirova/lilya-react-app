@@ -4,7 +4,6 @@ class Slider extends Component {
     constructor(props) {
         super(props);
 
-        
         this.goToPrevSlide = this.goToPrevSlide.bind(this);
         this.goToNextSlide = this.goToNextSlide.bind(this);
 
@@ -148,6 +147,5 @@ const SliderItem = (props) => {
         </div>
     );
 }
-
 
 export default Slider;

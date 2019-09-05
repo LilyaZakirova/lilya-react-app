@@ -7,11 +7,11 @@ import {
 
 import '../styles/main.less';
 
-import Main from './main.js';
-import Gallery from './gallery.js';
-import Form from './form.js';
-import Footer from './footer.js';
-import Header from './header.js';
+import Main from './main.jsx';
+import Gallery from './gallery.jsx';
+import Form from './form.jsx';
+import Footer from './footer.jsx';
+import Header from './header.jsx';
 
 class App extends Component {
     render () {

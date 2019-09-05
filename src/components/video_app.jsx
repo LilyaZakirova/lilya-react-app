@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import YTSearch from 'youtube-api-search';
 import debounce from 'lodash/debounce';
-import SearchBar from './search_bar';
-import VideoDetail from './video_detail';
-import VideoList from './video_list';
+import SearchBar from './search_bar.jsx';
+import VideoDetail from './video_detail.jsx';
+import VideoList from './video_list.jsx';
 
 const API_KEY = 'AIzaSyAf_FaQHTh3VkeIOVKHVMThHHJCEpWQGV4x';
 
