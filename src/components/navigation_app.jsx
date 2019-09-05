@@ -55,8 +55,7 @@ const MenuButton = (props) => {
     return (
         <div className={
                 !props.isMenuOpened ?
-                "menu-button " : "menu-button change"
-            }
+                "menu-button" : "menu-button change"}
             onClick={props.onClick}> 
 
             <div className="menu-button__bar1"></div>
