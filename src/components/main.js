@@ -2,7 +2,7 @@ import React from "react";
 
 function Main() {
 	return (
-		<div>
+		<>
 			<main className="page-main">
 				<article>
 					<section className="reasons">
@@ -94,8 +94,8 @@ function Main() {
 					</section>
 				</article>
 			</main>
-		</div>
+		</>
 	);
 }
 
- export default Main;
+export default Main;

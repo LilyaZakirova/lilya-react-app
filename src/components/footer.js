@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer ()  {
     return (
-        <div>
+        <>
           <footer className="page-footer">
                 <div className="hashtag page-footer__hashtag">
                     <p className="hashtag__text">#visitsedona</p>
@@ -41,7 +41,7 @@ function Footer ()  {
                     </a>
                 </div>
             </footer>
-        </div>
+        </>
     );
 }
 

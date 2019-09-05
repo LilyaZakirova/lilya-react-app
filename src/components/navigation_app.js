@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink} from "react-router-dom";
 
-
 class Navigation extends Component {
     constructor(props) {
         super(props);
@@ -11,7 +10,6 @@ class Navigation extends Component {
         }
 
         this.resize = this.resize.bind(this);
-
     }
 
     handleToggleMenu() {
@@ -26,8 +24,6 @@ class Navigation extends Component {
         }));
     }
 
-
-    
     handleWindowResolution() {
         window.addEventListener("resize", this.resize);
     }
@@ -38,12 +34,9 @@ class Navigation extends Component {
         } 
     }
 
-    
-
-
     render() {
         this.handleWindowResolution()
-        return(
+        return (
             <nav className={
                     this.state.isMenuOpened ?
                     "nav-menu menu-section__nav-menu nav-menu--changed-z-index" : "nav-menu menu-section__nav-menu"} 
@@ -59,7 +52,7 @@ class Navigation extends Component {
 
 
 const MenuButton = (props) => {
-    return(
+    return (
         <div className={
                 !props.isMenuOpened ?
                 "menu-button " : "menu-button change"
@@ -74,7 +67,7 @@ const MenuButton = (props) => {
 }
 
 const NavigationList = (props) => {
-    return(
+    return (
         <ul className={
                 !props.isMenuOpened ?
                 "nav-menu__list nav-menu__list--invisible" : "nav-menu__list"}>

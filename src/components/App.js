@@ -1,5 +1,9 @@
-
 import React, { Component } from "react";
+
+import {
+    Route,
+    HashRouter
+} from "react-router-dom";
 
 import '../styles/main.less';
 
@@ -9,15 +13,8 @@ import Form from './form.js';
 import Footer from './footer.js';
 import Header from './header.js';
 
-
-import {
-    Route,
-    HashRouter
-} from "react-router-dom";
-
-
 class App extends Component {
-    render() {
+    render () {
         return (
             <HashRouter>
                 <Header />

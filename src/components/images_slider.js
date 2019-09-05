@@ -1,6 +1,5 @@
 import React, { Component } from "react"; 
 
-
 class Slider extends Component {
     constructor(props) {
         super(props);
@@ -70,17 +69,19 @@ class Slider extends Component {
             <div className="slider">
                 <div className="slider__items">
                    {
-                       <SliderItem image={this.state.images[this.state.slideIndex]} 
-                        author={this.state.slidesData[this.state.slideIndex].author} 
-                        title={this.state.slidesData[this.state.slideIndex].title}/>
+                       <SliderItem 
+                            image={this.state.images[this.state.slideIndex]} 
+                            author={this.state.slidesData[this.state.slideIndex].author} 
+                            title={this.state.slidesData[this.state.slideIndex].title}/>
                    }
                 </div>
                 <div className="slider__dots-container">
                     {this.state.images.map((value, index) => 
-                        <DotItem index={index} 
-                        key={index} 
-                        onClick={() => this.goToSelectedSlide(index)} 
-                        slideIndex={this.state.slideIndex}/>
+                        <DotItem 
+                            index={index} 
+                            key={index} 
+                            onClick={() => this.goToSelectedSlide(index)} 
+                            slideIndex={this.state.slideIndex}/>
                     )}
                 </div>
                <ButtonPrev goToPrevSlide={this.goToPrevSlide}/>
@@ -99,7 +100,6 @@ const ButtonPrev = (props) => {
         </a>
     );
 }
-
 
 const ButtonNext = (props) => {
     return (
@@ -123,7 +123,6 @@ const DotItem = (props) => {
         </span>
     );
 }
-
 
 const SliderItem = (props) => {
     let imageUrl = require(`../img/${props.image}`);

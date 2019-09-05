@@ -6,11 +6,10 @@ const picturePlants = require('../img/local-plants.jpg');
 const pictureRoad = require('../img/road.jpg');
 const pictureBridge = require('../img/devil-bridge.jpg');
 
-
 function Gallery() {
     return (
-        <div>
-        <main className="page-main">
+        <>
+            <main className="page-main">
                 <article className="gallery">
                     <section className="gallery__photos-block"> 
                         <h2 className="gallery__title">Фото и видео</h2>
@@ -88,7 +87,7 @@ function Gallery() {
                     </section>
                 </article>
             </main>
-        </div>
+        </>
     );
 }
   

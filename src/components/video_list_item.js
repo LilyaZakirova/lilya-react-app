@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const VideoListItem = ({video, onVideoSelect}) => {
     const imageUrl = video.snippet.thumbnails.medium.url;
     let videoTitle = video.snippet.title;
@@ -20,8 +19,6 @@ const VideoListItem = ({video, onVideoSelect}) => {
             </figure>
         </li>
     );
-
-    
 };
 
 export default VideoListItem;

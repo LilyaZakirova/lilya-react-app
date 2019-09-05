@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import YTSearch from 'youtube-api-search';
-import _ from 'lodash';
+import debounce from 'lodash/debounce';
 import SearchBar from './search_bar';
 import VideoDetail from './video_detail';
 import VideoList from './video_list';
 
-const API_KEY = 'AIzaSyAf_FaQHTh3VkeIOVKHVMThHHJCEpWQGV4';
+const API_KEY = 'AIzaSyAf_FaQHTh3VkeIOVKHVMThHHJCEpWQGV4x';
 
 class VideoApp extends Component {
     constructor(props) {
@@ -30,16 +30,16 @@ class VideoApp extends Component {
 
 
     render() {
-        const videoSearch = _.debounce((term) => {this.videoSearch(term)}, 300)
+        const videoSearch = debounce((term) => {this.videoSearch(term)}, 300)
 
         return (
-            <div>
+            <>
                 <SearchBar onSearchTermChange = {videoSearch}/>
                 <VideoDetail video={this.state.selectedVideo} />
                 <VideoList 
                     videos = {this.state.videos}
                     onVideoSelect = {(selectedVideo) => this.setState({selectedVideo})}/>
-            </div>
+            </>
         );
     }
 }
