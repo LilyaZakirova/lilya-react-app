@@ -5,7 +5,7 @@ import SearchBar from './search_bar.jsx';
 import VideoDetail from './video_detail.jsx';
 import VideoList from './video_list.jsx';
 
-const API_KEY = 'AIzaSyAf_FaQHTh3VkeIOVKHVMThHHJCEpWQGV4x';
+const API_KEY = 'AIzaSyAf_FaQHTh3VkeIOVKHVMThHHJCEpWQGV4';
 
 class VideoApp extends Component {
     constructor(props) {
