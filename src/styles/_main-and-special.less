@@ -1,8 +1,17 @@
 /*main and special*/
 
-
 html {
-	background-color: @outer-color;
+    background-color: @outer-color;
+}
+
+#root {
+    display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
 }
 
 .wrapper {
@@ -72,7 +81,6 @@ html {
 .page-header {
     .bg-white();
 	flex: 0 0 auto;
-	margin-top: auto;
 }
 
 .page-main {
@@ -82,5 +90,6 @@ html {
 
 .page-footer {	
     .bg-white();
-	flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-top: auto;
 }

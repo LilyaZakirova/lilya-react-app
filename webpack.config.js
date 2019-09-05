@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: {
     bundle: "./src/index.js", 
-    script: "./src/scripts/is-ie.js"
+    is_ie: "./src/scripts/is_ie.js"
   },
   output: {
     /*path: path.join(__dirname, "/dist"),
